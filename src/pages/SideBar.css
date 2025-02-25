@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.nav-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.nav-toggle img{
+  height: 43px;
+  width: 45px;
+  background-color: #e3dddd;
+  border-radius: 7px;
+}
+
+.sidenav {
+  height:98vh;
+  width: 250px;
+  border-radius: 20px;
+  margin: 8px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background-color: #1d2820;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 118px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  
+}
+
+.sidenav.open {
+  left: 0;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+}
+
+.sidenav a:hover {
+  color: #e3dddd;
+  background-color: #316249;
+  border-radius: 17px;
+  padding: 15px;
+}

@@ -1,0 +1,353 @@
+.upper-main{
+    display: flex;
+    flex-direction: column;
+    /* height:400vh; */
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width:100%;
+    color: white;
+    margin-top: -55px;
+    gap: 11px;
+}
+.mood{
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+    margin-left: 530px;
+    gap: 40px;
+    position: absolute;
+    
+    color: white;
+}
+.out{
+    display: flex;
+    flex-direction: column;
+   
+}
+.Outer-wrap-main{
+    
+}
+.Mood-wrap{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px; 
+    height: 50vh;
+}
+video{
+    object-fit: cover;
+}
+.vid{
+    height: 100vh;
+    
+    
+}
+.foot{
+    margin-top: 160px;
+}
+.site-name{
+    /* font-size: 40px;
+    font-weight: bolder; */
+    margin-bottom: 100px;
+}
+.mid-main{
+    width: 66vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.main-content{
+    background-color: rgb(108, 198, 113);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+   
+}
+.main-wrap{
+    width: 55vw;
+    display: flex;
+    justify-content: center;
+}
+.Mood-head{
+    font-size: 100px;
+    color: #295535;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -26px;
+    margin-top: 20px;
+}
+.message{
+    margin-top: 20px;
+}
+.image-logo{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 20px;
+}
+.spotify{
+    display: flex;
+    align-items: center;
+    font-size: 51px;
+    color: #295535;
+}
+.connect p{
+    margin-top: 20px;
+    color: #295535;
+}
+.privacy{
+    display: flex;
+    justify-content: center;
+    color: #1f542d;
+}
+.main-head-login{
+    display: flex;
+    flex-direction: column;
+   
+}
+.playlist-down{
+    color: #1f542d;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+.connect{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.connect p{
+    word-spacing: 1px;
+    font-style: normal;
+}
+.button{
+    padding: 5px;
+    border-radius: 16px;
+    background-color: #1f542d;
+    display: flex;
+    justify-content: center;
+}
+#under{
+    display: flex;
+    align-items: center;
+}
+.but-inside{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.foot{
+   margin-top:123px;
+   display: flex;
+   justify-content: center ; 
+}
+.foot div{
+    color: #1f542d;
+}
+.full-dash{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    width: 43vw;
+    height: 48vh;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 51px;
+}
+
+@media (max-width: 768px) {
+    .upper-main {
+        margin-top: 0;
+        gap: 8px;
+        padding: 0 10px;
+    }
+    .mood {
+        margin-left: 0;
+        align-items: center;
+    }
+    .video-background {
+        height: 100vh;
+        object-fit: cover;
+        
+    }
+    .site-name {
+        font-size: 2.5rem;
+    }
+    .vid {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+      }
+      .mood {
+        padding: 0 10px;
+        text-align: center;
+      }
+      .foot {
+       padding-top: 70px;
+        
+      }
+      .mid-main{
+        width: 66vw;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .main-content{
+        background-color: rgb(108, 198, 113);
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+    .main-wrap{
+        width: 55vw;
+        height: 100vh;
+        display: flex;
+        padding-left: 30px;
+        justify-content: center;
+    }
+    .Mood-wrap{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    .Mood-head{
+        
+        color: #295535;
+        display: flex;
+        justify-content: center;
+        margin-bottom: -26px;
+        margin-top: 140px;
+    }
+    .message{
+        margin-top: 20px;
+    }
+    .image-logo{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .spotify{
+        display: flex;
+        align-items: center;
+        font-size: 51px;
+        color: #295535;
+    }
+    .connect p{
+        margin-top: 20px;
+        color: #295535;
+    }
+    .privacy{
+        display: flex;
+        justify-content: center;
+        color: #1f542d;
+    }
+    .main-head-login{
+        display: flex;
+        flex-direction: column;
+    }
+    .playlist-down{
+        color: #1f542d;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+    }
+    .connect{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    .connect p{
+        word-spacing: 1px;
+        font-style: normal;
+    }
+    .button{
+        padding: 5px;
+        border-radius: 16px;
+        background-color: #1f542d;
+        display: flex;
+        justify-content: center;
+    }
+    #under{
+        display: flex;
+        align-items: center;
+    }
+    .but-inside{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .foot{
+       margin-top: 123px;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+    }
+    .foot div{
+        color: #1f542d;
+    }
+    .full-dash{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 43vw;
+        height: 48vh;
+    }
+    .container1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 51px;
+    }    
+    .mid-main {
+        width: 90vw;
+    }
+    .main-wrap {
+        width: 100vw;
+        margin-left: -20px;
+    }
+    .Mood-head {
+        font-size: 70px;
+    }
+    .spotify {
+        font-size: 36px;
+    }
+    .foot {
+        margin-top: 50px;
+    }
+    video {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+    .img{
+        width: 47px;
+        height: 46px;
+    }
+    .card {
+        width: 90vw;
+        height: auto;
+    }
+    .container {
+        gap: 30px;
+    }
+}
+ 
+

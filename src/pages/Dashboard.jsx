@@ -5,6 +5,9 @@ import { getCurrentUser } from "../features/spotify/spotifyAPI";
 import { setUserId, setSelectedMood } from "../features/spotify/spotifySlice";
 import { FiMenu } from "react-icons/fi";
 import { Link, useNavigate } from "react-router-dom";
+import './Dashboard.css'
+import SideBar from "./SideBar";
+import './Home.css'
 
 const Dashboard = () => {
   const dispatch = useDispatch();
@@ -49,15 +52,13 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col">
+    <div className="full min-h-screen bg-gray-900 text-white flex flex-col">
       {/* Navigation */}
-      <nav className="container mx-auto px-4 py-6 flex justify-between items-center">
+      <nav className="container1 mx-auto px-4 py-6 flex justify-between items-center">
+       <SideBar/>
         <Link to="/" className="text-2xl font-bold">
           TuneAura
         </Link>
-        <button className="text-white hover:text-gray-300">
-          <FiMenu size={24} />
-        </button>
       </nav>
 
       {/* Main Content */}
@@ -66,7 +67,7 @@ const Dashboard = () => {
           Your {selectedMood} Playlist
         </h2>
         {selectedMood && (
-          <div className="bg-blue-900 rounded-lg p-6 mb-8">
+          <div className=" card bg-blue-900 rounded-lg p-6 mb-8">
             <iframe
               style={{ borderRadius: "12px" }}
               src={`https://open.spotify.com/embed/playlist/${moodMapping[selectedMood]}?utm_source=generator`}

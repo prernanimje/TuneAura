@@ -6,6 +6,12 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Callback from "./pages/Callback";
+import Mood from "./pages/Mood.jsx";
+import About from './pages/About.jsx'
+import Contact from './pages/Contact.jsx'
+import './App.css'
+import Video from './assets/Background-video.mp4'
+
 
 export default function App() {
   const dispatch = useDispatch();
@@ -18,11 +24,20 @@ export default function App() {
   }, [dispatch]);
 
   return (
+    <div className="relative h-screen w-full">
+    {/* <video autoPlay loop muted className="absolute inset-0 h-full w-full object-cover">
+      <source src={Video} type="video/mp4" />
+    </video> */}
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<><Home/><Mood/></>} />
+      <Route path="/home" element={<Home/>}/>
+      <Route path="/mood" element={<Mood/>}/>
       <Route path="/login" element={<Login />} />
       <Route path="/callback" element={<Callback />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/about" element={<About/>}/>
+      <Route path="/contact" element={<Contact/>} />
     </Routes>
+  </div>
   );
 }
